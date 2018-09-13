@@ -10,7 +10,7 @@ namespace FBShare.Model.Fb
     {
         public string id { get; set; }
         public string name { get; set; }
-        public string member_count { get; set; }
+        public int member_count { get; set; }
         public string privacy { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace FBShare.Model.Fb
     public class Result
     {
         public List<Data> data { get; set; }
-        protected object paging { get; set; }
+        public object paging { get; set; }
     }
 
 }

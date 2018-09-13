@@ -28,7 +28,7 @@ namespace FBShare.Model.Fb
         public async Task<object> GetGroups()
         {
 
-            var rp = await _fb.GetTaskAsync<Result>("/me/groups");
+            var rp = await _fb.GetTaskAsync<Result>("/me/groups?fields=id,name,privacy,member_count");
             return rp;
         }
     }
