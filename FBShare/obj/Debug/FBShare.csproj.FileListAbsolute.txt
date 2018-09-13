@@ -39,3 +39,13 @@ E:\AnhTT\Workspace\Facebook\FBShare\FBShare\obj\Debug\FBShare.Properties.Resourc
 E:\AnhTT\Workspace\Facebook\FBShare\FBShare\obj\Debug\FBShare.csproj.GenerateResource.Cache
 E:\AnhTT\Workspace\Facebook\FBShare\FBShare\obj\Debug\FBShare.exe
 E:\AnhTT\Workspace\Facebook\FBShare\FBShare\obj\Debug\FBShare.pdb
+E:\AnhTT\Workspace\Facebook\FBShare\FBShare\bin\Debug\EntityFramework.dll
+E:\AnhTT\Workspace\Facebook\FBShare\FBShare\bin\Debug\EntityFramework.SqlServer.dll
+E:\AnhTT\Workspace\Facebook\FBShare\FBShare\bin\Debug\EntityFramework.xml
+E:\AnhTT\Workspace\Facebook\FBShare\FBShare\bin\Debug\EntityFramework.SqlServer.xml
+E:\AnhTT\Workspace\Facebook\FBShare\FBShare\bin\Debug\AutoMapper.dll
+E:\AnhTT\Workspace\Facebook\FBShare\FBShare\bin\Debug\AutoMapper.EF6.dll
+E:\AnhTT\Workspace\Facebook\FBShare\FBShare\bin\Debug\DelegateDecompiler.dll
+E:\AnhTT\Workspace\Facebook\FBShare\FBShare\bin\Debug\DelegateDecompiler.EntityFramework.dll
+E:\AnhTT\Workspace\Facebook\FBShare\FBShare\bin\Debug\Mono.Reflection.dll
+E:\AnhTT\Workspace\Facebook\FBShare\FBShare\bin\Debug\AutoMapper.xml

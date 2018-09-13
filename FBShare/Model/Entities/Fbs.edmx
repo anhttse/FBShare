@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="FbsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="FbsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Captions">
           <Key>
             <PropertyRef Name="Id" />
@@ -20,6 +20,8 @@
           <Property Name="TokenId" Type="int" />
           <Property Name="Name" Type="nvarchar" MaxLength="250" />
           <Property Name="Member_count" Type="int" />
+          <Property Name="GroupId" Type="nvarchar" MaxLength="50" />
+          <Property Name="Privacy" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Tokens">
           <Key>
@@ -27,7 +29,7 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="250" />
-          <Property Name="Token" Type="nvarchar" MaxLength="255" />
+          <Property Name="Value" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <Association Name="FK__Groups__TokenId__1273C1CD">
           <End Role="Tokens" Type="Self.Tokens" Multiplicity="0..1" />
@@ -50,8 +52,7 @@
             <End Role="Groups" EntitySet="Groups" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="FbsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -71,6 +72,8 @@
           <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="Member_count" Type="Int32" />
           <NavigationProperty Name="Token" Relationship="Self.FK__Groups__TokenId__1273C1CD" FromRole="Groups" ToRole="Tokens" />
+          <Property Name="GroupId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Privacy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Token">
           <Key>
@@ -78,8 +81,8 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
-          <Property Name="Token1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Groups" Relationship="Self.FK__Groups__TokenId__1273C1CD" FromRole="Tokens" ToRole="Groups" />
+          <Property Name="Value" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK__Groups__TokenId__1273C1CD">
           <End Role="Tokens" Type="Self.Token" Multiplicity="0..1" />
@@ -119,6 +122,8 @@
           <EntitySetMapping Name="Groups">
             <EntityTypeMapping TypeName="FbsModel.Group">
               <MappingFragment StoreEntitySet="Groups">
+                <ScalarProperty Name="Privacy" ColumnName="Privacy" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="TokenId" ColumnName="TokenId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -129,9 +134,9 @@
           <EntitySetMapping Name="Tokens">
             <EntityTypeMapping TypeName="FbsModel.Token">
               <MappingFragment StoreEntitySet="Tokens">
+                <ScalarProperty Name="Value" ColumnName="Value" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Token1" ColumnName="Token" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

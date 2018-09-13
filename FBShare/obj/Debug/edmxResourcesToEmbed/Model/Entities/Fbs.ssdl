@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FbsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Captions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Groups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TokenId" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Member_count" Type="int" />
+    <Property Name="GroupId" Type="nvarchar" MaxLength="50" />
+    <Property Name="Privacy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tokens">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Value" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <Association Name="FK__Groups__TokenId__1273C1CD">
+    <End Role="Tokens" Type="Self.Tokens" Multiplicity="0..1" />
+    <End Role="Groups" Type="Self.Groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tokens">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="TokenId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FbsModelStoreContainer">
+    <EntitySet Name="Captions" EntityType="Self.Captions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Groups" EntityType="Self.Groups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tokens" EntityType="Self.Tokens" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Groups__TokenId__1273C1CD" Association="Self.FK__Groups__TokenId__1273C1CD">
+      <End Role="Tokens" EntitySet="Tokens" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

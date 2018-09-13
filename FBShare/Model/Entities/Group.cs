@@ -18,6 +18,8 @@ namespace FBShare.Model.Entities
         public Nullable<int> TokenId { get; set; }
         public string Name { get; set; }
         public Nullable<int> Member_count { get; set; }
+        public string GroupId { get; set; }
+        public string Privacy { get; set; }
     
         public virtual Token Token { get; set; }
     }

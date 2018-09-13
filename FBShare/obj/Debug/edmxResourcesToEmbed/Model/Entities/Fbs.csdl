@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FbsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Caption">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TokenId" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Member_count" Type="Int32" />
+    <NavigationProperty Name="Token" Relationship="Self.FK__Groups__TokenId__1273C1CD" FromRole="Groups" ToRole="Tokens" />
+    <Property Name="GroupId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Privacy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Token">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Groups" Relationship="Self.FK__Groups__TokenId__1273C1CD" FromRole="Tokens" ToRole="Groups" />
+    <Property Name="Value" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK__Groups__TokenId__1273C1CD">
+    <End Role="Tokens" Type="Self.Token" Multiplicity="0..1" />
+    <End Role="Groups" Type="Self.Group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tokens">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="TokenId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FbsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Captions" EntityType="Self.Caption" />
+    <EntitySet Name="Groups" EntityType="Self.Group" />
+    <EntitySet Name="Tokens" EntityType="Self.Token" />
+    <AssociationSet Name="FK__Groups__TokenId__1273C1CD" Association="Self.FK__Groups__TokenId__1273C1CD">
+      <End Role="Tokens" EntitySet="Tokens" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
