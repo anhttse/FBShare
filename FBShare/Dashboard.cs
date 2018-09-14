@@ -15,11 +15,42 @@ namespace FBShare
         public Dashboard()
         {
             InitializeComponent();
+            activeSlide.Height = button1.Height;
+            activeSlide.Top = button1.Top;
+            shareControl1.BringToFront();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            activeSlide.Height = button1.Height;
+            activeSlide.Top = button1.Top;
+            shareControl1.BringToFront();
+        }
 
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            activeSlide.Height = btnAccount.Height;
+            activeSlide.Top = btnAccount.Top;
+            shareControl1.BringToFront();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
+
+        private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            WindowState = FormWindowState.Normal;
+            notifyIcon.Visible = false;
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            Hide();
+            WindowState = FormWindowState.Minimized;
+            notifyIcon.Visible = true;
         }
     }
 }
