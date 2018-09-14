@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace FBShare.Model.Fb
 {
-    public class Result
+    public class FbUser
     {
-        public List<Groups> data { get; set; }
-        public object paging { get; set; }
+        public string id { get; set; }
+        public string name { get; set; }
     }
-
 }

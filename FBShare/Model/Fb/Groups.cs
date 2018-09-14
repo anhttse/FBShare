@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FBShare.Model.Fb
 {
-    public class Data
+    public class Groups
     {
         public string id { get; set; }
         public string name { get; set; }

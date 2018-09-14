@@ -13,20 +13,19 @@
       <EntityTypeMapping TypeName="FbsModel.Group">
         <MappingFragment StoreEntitySet="Groups">
           <ScalarProperty Name="Privacy" ColumnName="Privacy" />
-          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="TokenId" ColumnName="TokenId" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Member_count" ColumnName="Member_count" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Tokens">
-      <EntityTypeMapping TypeName="FbsModel.Token">
-        <MappingFragment StoreEntitySet="Tokens">
-          <ScalarProperty Name="Value" ColumnName="Value" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="FbsModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Token" ColumnName="Token" />
           <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

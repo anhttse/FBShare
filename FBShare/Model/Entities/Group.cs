@@ -14,13 +14,12 @@ namespace FBShare.Model.Entities
     
     public partial class Group
     {
-        public int Id { get; set; }
-        public Nullable<int> TokenId { get; set; }
+        public string Id { get; set; }
+        public string UserId { get; set; }
         public string Name { get; set; }
         public Nullable<int> Member_count { get; set; }
-        public string GroupId { get; set; }
         public string Privacy { get; set; }
     
-        public virtual Token Token { get; set; }
+        public virtual User User { get; set; }
     }
 }

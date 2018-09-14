@@ -121,10 +121,11 @@
     <Compile Include="Model\Entities\Group.cs">
       <DependentUpon>Fbs.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Entities\Token.cs">
+    <Compile Include="Model\Entities\User.cs">
       <DependentUpon>Fbs.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Fb\Data.cs" />
+    <Compile Include="Model\Fb\FbUser.cs" />
+    <Compile Include="Model\Fb\Groups.cs" />
     <Compile Include="Model\Fb\FB.cs" />
     <Compile Include="Model\Fb\Result.cs" />
     <Compile Include="Program.cs" />

@@ -27,6 +27,6 @@ namespace FBShare.Model.Entities
     
         public virtual DbSet<Caption> Captions { get; set; }
         public virtual DbSet<Group> Groups { get; set; }
-        public virtual DbSet<Token> Tokens { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 }
