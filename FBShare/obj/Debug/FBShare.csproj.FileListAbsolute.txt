@@ -58,3 +58,5 @@ C:\Users\AnhTT.ANHTT\source\repos\FBShare\FBShare\obj\Debug\FBShare.csproj.Gener
 C:\Users\AnhTT.ANHTT\source\repos\FBShare\FBShare\obj\Debug\FBShare.csproj.CoreCompileInputs.cache
 C:\Users\AnhTT.ANHTT\source\repos\FBShare\FBShare\obj\Debug\FBShare.exe
 C:\Users\AnhTT.ANHTT\source\repos\FBShare\FBShare\obj\Debug\FBShare.pdb
+C:\Users\AnhTT.ANHTT\source\repos\FBShare\FBShare\obj\Debug\FBShare.csprojResolveAssemblyReference.cache
+C:\Users\AnhTT.ANHTT\source\repos\FBShare\FBShare\obj\Debug\FBShare.Dashboard.resources
