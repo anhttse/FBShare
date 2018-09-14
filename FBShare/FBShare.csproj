@@ -150,6 +150,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="Model\Entities\Fbs.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -183,6 +184,8 @@
       <DependentUpon>Fbs.edmx</DependentUpon>
       <LastGenOutput>Fbs.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\share-icon11.png" />
+    <None Include="Resources\share-icon1.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
