@@ -131,7 +131,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(134, 57);
             this.button4.TabIndex = 0;
-            this.button4.Text = "       More";
+            this.button4.Text = "       Process";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button1_Click);
             // 
