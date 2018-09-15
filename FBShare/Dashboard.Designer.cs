@@ -1,4 +1,6 @@
-﻿namespace FBShare
+﻿using FBShare.Control;
+
+namespace FBShare
 {
     partial class Dashboard
     {
@@ -41,7 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.shareControl1 = new FBShare.ShareControl();
+            this.shareControl1 = new ShareControl();
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();

@@ -1,4 +1,4 @@
-﻿namespace FBShare
+﻿namespace FBShare.Control
 {
     partial class ShareControl
     {

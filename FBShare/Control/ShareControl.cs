@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace FBShare
+namespace FBShare.Control
 {
     public partial class ShareControl : UserControl
     {

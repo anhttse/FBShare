@@ -38,6 +38,57 @@
     <Reference Include="AutoMapper.EF6, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.EF6.1.1.1\lib\net45\AutoMapper.EF6.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.Core">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.ToggleSwitch">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.ToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="DelegateDecompiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=93b26a10a04705bd, processorArchitecture=MSIL">
       <HintPath>..\packages\DelegateDecompiler.0.23.0\lib\net40-client\DelegateDecompiler.dll</HintPath>
     </Reference>
@@ -94,10 +145,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ShareControl.cs">
+    <Compile Include="Control\ShareControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ShareControl.Designer.cs">
+    <Compile Include="Control\ShareControl.Designer.cs">
       <DependentUpon>ShareControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
@@ -142,7 +193,7 @@
     <Compile Include="Model\Fb\Result.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ShareControl.resx">
+    <EmbeddedResource Include="Control\ShareControl.resx">
       <DependentUpon>ShareControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
@@ -199,8 +250,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Control\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
