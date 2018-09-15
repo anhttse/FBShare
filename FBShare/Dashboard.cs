@@ -31,7 +31,7 @@ namespace FBShare
         {
             activeSlide.Height = btnAccount.Height;
             activeSlide.Top = btnAccount.Top;
-            shareControl1.BringToFront();
+            facebookAccountControl1.BringToFront();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

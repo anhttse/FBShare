@@ -38,55 +38,8 @@
     <Reference Include="AutoMapper.EF6, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.EF6.1.1.1\lib\net45\AutoMapper.EF6.dll</HintPath>
     </Reference>
-    <Reference Include="Bunifu.Core">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.ToggleSwitch">
-      <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu.UI.WinForms.ToggleSwitch.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu_UI_v1.5.3">
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Desktop\Bunifu UI WinForms 1.7.0.0\Bunifu UI WinForms 1.7.0.0\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="DelegateDecompiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=93b26a10a04705bd, processorArchitecture=MSIL">
@@ -104,6 +57,7 @@
     <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
       <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Mono.Reflection, Version=1.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>..\packages\Mono.Reflection.1.1.0.0\lib\Mono.Reflection.dll</HintPath>
     </Reference>
@@ -113,6 +67,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http">
       <HintPath>..\packages\System.Net.Http.2.0.20126.16343\lib\net40\System.Net.Http.dll</HintPath>
@@ -145,6 +100,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\AddUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\AddUserControl.Designer.cs">
+      <DependentUpon>AddUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\FacebookAccountControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\FacebookAccountControl.Designer.cs">
+      <DependentUpon>FacebookAccountControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control\ShareControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -193,6 +160,12 @@
     <Compile Include="Model\Fb\Result.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Control\AddUserControl.resx">
+      <DependentUpon>AddUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\FacebookAccountControl.resx">
+      <DependentUpon>FacebookAccountControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Control\ShareControl.resx">
       <DependentUpon>ShareControl.cs</DependentUpon>
     </EmbeddedResource>
