@@ -10,17 +10,11 @@
 namespace FBShare.Model.Entities
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Group
+    public partial class GetGroups_Result
     {
         public string Id { get; set; }
-        public string UserId { get; set; }
         public string Name { get; set; }
         public Nullable<int> Member_count { get; set; }
-        public string Privacy { get; set; }
-        public Nullable<bool> Enable { get; set; }
-    
-        public virtual User User { get; set; }
     }
 }

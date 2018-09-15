@@ -12,6 +12,7 @@
     <EntitySetMapping Name="Groups">
       <EntityTypeMapping TypeName="FbsModel.Group">
         <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
           <ScalarProperty Name="Privacy" ColumnName="Privacy" />
           <ScalarProperty Name="Member_count" ColumnName="Member_count" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -29,5 +30,14 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetGroups" FunctionName="FbsModel.Store.GetGroups">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FbsModel.GetGroups_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Member_count" ColumnName="Member_count" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

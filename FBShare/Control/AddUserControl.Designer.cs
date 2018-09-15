@@ -32,7 +32,7 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtAddToken = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAddAccount = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAddAccountCancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
@@ -82,40 +82,41 @@
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
             // 
-            // bunifuFlatButton1
+            // btnAddAccount
             // 
-            this.bunifuFlatButton1.Active = false;
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Save";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = null;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(252, 206);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(255)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(105, 48);
-            this.bunifuFlatButton1.TabIndex = 4;
-            this.bunifuFlatButton1.Text = "Save";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddAccount.Active = false;
+            this.btnAddAccount.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnAddAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnAddAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddAccount.BorderRadius = 0;
+            this.btnAddAccount.ButtonText = "Save";
+            this.btnAddAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddAccount.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAddAccount.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAddAccount.Iconimage = null;
+            this.btnAddAccount.Iconimage_right = null;
+            this.btnAddAccount.Iconimage_right_Selected = null;
+            this.btnAddAccount.Iconimage_Selected = null;
+            this.btnAddAccount.IconMarginLeft = 0;
+            this.btnAddAccount.IconMarginRight = 0;
+            this.btnAddAccount.IconRightVisible = true;
+            this.btnAddAccount.IconRightZoom = 0D;
+            this.btnAddAccount.IconVisible = true;
+            this.btnAddAccount.IconZoom = 90D;
+            this.btnAddAccount.IsTab = false;
+            this.btnAddAccount.Location = new System.Drawing.Point(252, 206);
+            this.btnAddAccount.Name = "btnAddAccount";
+            this.btnAddAccount.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnAddAccount.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(255)))));
+            this.btnAddAccount.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAddAccount.selected = false;
+            this.btnAddAccount.Size = new System.Drawing.Size(105, 48);
+            this.btnAddAccount.TabIndex = 4;
+            this.btnAddAccount.Text = "Save";
+            this.btnAddAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddAccount.Textcolor = System.Drawing.Color.White;
+            this.btnAddAccount.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddAccount.Click += new System.EventHandler(this.btnAddAccount_Click);
             // 
             // btnAddAccountCancel
             // 
@@ -135,7 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnAddAccountCancel);
-            this.Controls.Add(this.bunifuFlatButton1);
+            this.Controls.Add(this.btnAddAccount);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.txtAddToken);
             this.Controls.Add(this.bunifuCustomLabel1);
@@ -153,7 +154,7 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtAddToken;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnAddAccount;
         private System.Windows.Forms.Button btnAddAccountCancel;
     }
 }

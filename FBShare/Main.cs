@@ -23,6 +23,7 @@ namespace FBShare
             var token = txtToken.Text;
             var fb = new Fb(token);
             var rs = fb.GetGroups();
+            
         }
 
         //        private  Task RunAsync()

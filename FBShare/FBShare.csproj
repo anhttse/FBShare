@@ -11,6 +11,21 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,12 +46,27 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>browser_yqj_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoMapper, Version=6.0.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.6.0.2\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="AutoMapper.EF6, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.EF6.1.1.1\lib\net45\AutoMapper.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Core">
+      <HintPath>..\..\..\bunifu ui\Bunifu UI WinForms 1.8.0.0\Bunifu.Core.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -100,17 +130,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\AddCaptionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\AddCaptionControl.Designer.cs">
+      <DependentUpon>AddCaptionControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control\AddUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Control\AddUserControl.Designer.cs">
       <DependentUpon>AddUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control\CaptionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\CaptionControl.Designer.cs">
+      <DependentUpon>CaptionControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control\FacebookAccountControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Control\FacebookAccountControl.Designer.cs">
       <DependentUpon>FacebookAccountControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ProcessControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ProcessControl.Designer.cs">
+      <DependentUpon>ProcessControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\ShareControl.cs">
       <SubType>UserControl</SubType>
@@ -148,6 +196,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Fbs.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Model\Entities\GetGroups_Result.cs">
+      <DependentUpon>Fbs.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\Entities\Group.cs">
       <DependentUpon>Fbs.tt</DependentUpon>
     </Compile>
@@ -158,13 +209,20 @@
     <Compile Include="Model\Fb\Groups.cs" />
     <Compile Include="Model\Fb\FB.cs" />
     <Compile Include="Model\Fb\Result.cs" />
+    <Compile Include="Model\Thread\MultiThread.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Control\AddUserControl.resx">
       <DependentUpon>AddUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Control\CaptionControl.resx">
+      <DependentUpon>CaptionControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Control\FacebookAccountControl.resx">
       <DependentUpon>FacebookAccountControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ProcessControl.resx">
+      <DependentUpon>ProcessControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control\ShareControl.resx">
       <DependentUpon>ShareControl.cs</DependentUpon>
@@ -193,6 +251,7 @@
       <DependentUpon>Fbs.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -207,6 +266,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="browser_yqj_icon.ico" />
     <Content Include="Model\Entities\Fbs.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Fbs.Context.cs</LastGenOutput>
@@ -223,6 +283,15 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,23 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShareControl));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtLink = new System.Windows.Forms.TextBox();
             this.btnShare = new System.Windows.Forms.Button();
+            this.cbFbAccount = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(115, 99);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(273, 28);
-            this.comboBox1.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -80,13 +71,13 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Link to share";
             // 
-            // textBox1
+            // txtLink
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(115, 181);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(406, 27);
-            this.textBox1.TabIndex = 4;
+            this.txtLink.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLink.Location = new System.Drawing.Point(115, 181);
+            this.txtLink.Name = "txtLink";
+            this.txtLink.Size = new System.Drawing.Size(406, 27);
+            this.txtLink.TabIndex = 4;
             // 
             // btnShare
             // 
@@ -103,6 +94,17 @@
             this.btnShare.TabIndex = 5;
             this.btnShare.Text = "Share";
             this.btnShare.UseVisualStyleBackColor = true;
+            this.btnShare.Click += new System.EventHandler(this.btnShare_Click);
+            // 
+            // cbFbAccount
+            // 
+            this.cbFbAccount.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cbFbAccount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFbAccount.FormattingEnabled = true;
+            this.cbFbAccount.Location = new System.Drawing.Point(115, 99);
+            this.cbFbAccount.Name = "cbFbAccount";
+            this.cbFbAccount.Size = new System.Drawing.Size(273, 27);
+            this.cbFbAccount.TabIndex = 0;
             // 
             // ShareControl
             // 
@@ -110,11 +112,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnShare);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtLink);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbFbAccount);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "ShareControl";
             this.Size = new System.Drawing.Size(668, 345);
             this.Load += new System.EventHandler(this.ShareControl_Load);
@@ -125,12 +128,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtLink;
         private System.Windows.Forms.Button btnShare;
+        private System.Windows.Forms.ComboBox cbFbAccount;
     }
 }

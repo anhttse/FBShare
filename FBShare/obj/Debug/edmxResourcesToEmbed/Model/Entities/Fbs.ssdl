@@ -16,6 +16,7 @@
     <Property Name="Name" Type="nvarchar" MaxLength="250" />
     <Property Name="Member_count" Type="int" />
     <Property Name="Privacy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Enable" Type="bit" />
   </EntityType>
   <EntityType Name="Users">
     <Key>
@@ -37,6 +38,11 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="GetGroups" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="nvarchar" Mode="In" />
+    <Parameter Name="MemberCount" Type="int" Mode="In" />
+    <Parameter Name="Privacy" Type="nvarchar" Mode="In" />
+  </Function>
   <EntityContainer Name="FbsModelStoreContainer">
     <EntitySet Name="Captions" EntityType="Self.Captions" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Groups" EntityType="Self.Groups" Schema="dbo" store:Type="Tables" />
