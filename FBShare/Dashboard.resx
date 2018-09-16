@@ -118,6 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnMenuReaction.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJ
+        TUUH4gkQCh0xaXTMNwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANHSURBVFhH
+        xZdPSxVRGIddlCKCFkFCILpxKeLebfh/30aEPkCLtmFrW1og7kpqbS1dZvQdIhcSrQ0qKapF0/PMvGe6
+        M3du914te+AH9/ze97znzJmZM+cO9EqWZYPoJnqIXqK36DR0hA7RLlpCQ9Ht/FDsOnqEPqM6J6E65u6g
+        8SjTP3S+jO4jr1C+oH20jibRYKSm1dEzZo65Yt9NVOb2BB286ldIvqItdDXCXTE3+thXXqPeVoPEGfTe
+        XuAkbkSob+wbNcSaMxFqhgSvPA2+h/pbugasEbXE2s0rQcB7nma7F/Zfw5pF6fx2tF8Ypg+cOIlzX3kd
+        a0Zt2Qy7AMOl94n1oWm753jT6Ba6i9wLrkSoRC9i5pg7HaESPJ8Jx3Cs37eChu+5bIWVQ3sMPckjVT6i
+        jUgzbyO8OvYdi7Qc2r4dspMMl8aNw3e3fNX4PYzeIHmHHqA7yHv5A8njkOgZM8dc+4g1hqOsdX1FHcsx
+        hzRcNtmPnBza24WdPUcjYefQnkVpAPH3bIRzaI8g+8p22Dm03axkyYZ7u6xHXM9V8Yo+oGthV8CfQg6s
+        psKuYF9kDWu17pzumLJrww+LTEZcb66wshdhNULcSTQOnrCGhWAuLD23bTm04VdNWmc4X1jZs7DODDWe
+        FqWy+bD0XGE5suErcRKxHNqj6Cc6RpfC7hv7Rg1rjYadQ9uv6GnjBATvAMm9sPrGvkWJ7CCsErxyAh4m
+        pLL70Z5An5Czvx12z9gn+lpjIuwc2pVb4ElGyocwgbeAvqG+JmFu9LHvQtgleJWH0GOUlK9hK/iLqOdJ
+        mBO59lkMuwJ+5TX0DCeVjagVYuZ0nYSxyDF3Kew2iFU2oiHUthXXIbaMOk5CL2LmLIfdBrHqVhymB0ip
+        fIzqEHcS31FlEv4Oz1jHwYV49WMkNMZRx89xK8RXUDmJUBp8JdIaId78ORYMT6/S9UBCfBWlSaTBVyPc
+        CPHOBxLBNMHjknQ9kpGzhhxYrYXdEWsiaT6SCQFvRc+HUuJO4o+DWyNqSedDaYKE/3csT5DoSqTb4UNz
+        cX9MEnRw6XwwfWLFd/di/pq1QmdXw33CjaPOv/tzWodi7phuyX47/ID5FfUK1Rn/ng8M/ALvvGnMMRHI
+        RAAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="btnMenuProcess.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6

@@ -120,6 +120,12 @@
   <metadata name="No.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="fbName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="fbGroup.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="userBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -131,6 +137,28 @@
         mDZwqG7RNA3DMLAsC9d18X2fKIpIkoQsyyjLkqZpEF3XMU0Tx3HwPI8gCIjjmDRNyfOcqqroug45a2EY
         XrS+75FDs237UWvblmEYkLOmlLpo4zgid21FUVDX9bft0KZpQt6W/rRlWZC7trO2rivytvTQ5nlm2zbk
         6bd/bd93Prjlb/wAsaFfAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnAccountUpdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJ
+        TUUH4gkQCiMKmbo+bgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANdSURBVFhH
+        rZdbiE1RHIdnGAzRjJoHQqhJcktTPEhkEpnypBCRFyahhkmJJOX2ojBKIkaE3N5QPHlwySWmTCm33Irc
+        EpLr+H5r/feZvc/eZ8+emfPV1zn7f1lnn3X2Xnudks7Q1tbWC2diE17Dx/gdP2MrXsGtWGMtxYEBK3En
+        6oOy8gLrscyG6RoMsBo/YiF+4B//NpFHWGvDZYemcjyhEfK4hfoJluF4LMN+OAV1skdRHxpGJ9hgQ3cM
+        xRrwpjpDvME6K0mFulJsQM1OmCYrSYfC074+h2ZioKUzQ89ovK0BQqyxdDIUNPo6xz9cZKkIxHvifNyE
+        c7HSUhGI6yfajwG/cbqlo5AYjN9UZRywVATiI/Ghq2jnFx7HUVaWg5hu3/sY0II9LN0OwUMu7XmO/S2V
+        g1hffKaCAugLjLXyHMQm4E8VGEss5SEwCIPbSVM/w1IRiK9yFenss/IIxDf6tKPVwh4CK3zcccHCMcht
+        9iWpfMBSa8lBTNfNKxUY7T8XBxd9zNFo4Rjkwt+iEJ+sPAa5877Esd7CLqGzDphm4RjktvuSVFqsPAa5
+        8Bc4FwT7+GPHX4xdfAHkml1VOg+sPAa52b7EcSMI6rYKiF4ceZDf4ctSuWTlMchV+RLHiyA41B87brlg
+        AchX+7JUZlp5DHKabd1lwp+A4OCLj7kn3zBMXFQEcS0khbhuZYmQH+XLHNcs7BI3fMxxxF7XWToC8Tk+
+        ncgsK0tEeV/mOGZhlwivgl/tNXEqiY9A7XzyOYhDrSwR8ttcpWeLAjW4FPcoEkJ3wwDrc3CshUTPfJ3g
+        VKzDU6in5TzUMq3beTH2trYcxNSvx3rARAW1l0sidy/zvgJ3Ybj5sKVzEKv1Kcd73I1VllY+PP13g+AM
+        PInaw4XZa/lxGF4+w2zACqubhPk7IfEOJ1uNNioL8QnWKxaB4BDUM34tuinkVVOchnbFL/3bglx2H2Bw
+        rMdzuR0WhiI9IbWB6C6676tt2OzQtMC1F4f4lHcETfl3RndotmGzQ9NV31sU7tiw2aEpf9/XHV7bsNmh
+        Ke0fUWfRxRzbJaVCwz3XWhye2rDZoUnrwnLUWvAWO4tWw7O4EofbsF2HQcagngU6IT09tXrq/4C221qM
+        9HfuDOpvmbbhHUx5Scl/NRvwQnCXWm0AAAAASUVORK5CYII=
 </value>
   </data>
   <data name="btnAddAccount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

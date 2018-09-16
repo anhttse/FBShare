@@ -23,6 +23,7 @@ namespace FBShare.Model.Entities
         public string Id { get; set; }
         public string Name { get; set; }
         public string Token { get; set; }
+        public string ImageUrl { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Group> Groups { get; set; }

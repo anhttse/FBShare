@@ -48,6 +48,7 @@ namespace FBShare
             this.facebookAccountControl1 = new FBShare.Control.FacebookAccountControl();
             this.captionControl1 = new FBShare.Control.CaptionControl();
             this.processControl1 = new FBShare.Control.ProcessControl();
+            this.btnMenuReaction = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +57,7 @@ namespace FBShare
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.panel1.Controls.Add(this.activeSlide);
+            this.panel1.Controls.Add(this.btnMenuReaction);
             this.panel1.Controls.Add(this.btnMenuProcess);
             this.panel1.Controls.Add(this.btnMenuCaption);
             this.panel1.Controls.Add(this.btnAccount);
@@ -86,7 +88,7 @@ namespace FBShare
             this.btnMenuProcess.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnMenuProcess.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuProcess.Image")));
             this.btnMenuProcess.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuProcess.Location = new System.Drawing.Point(12, 235);
+            this.btnMenuProcess.Location = new System.Drawing.Point(12, 298);
             this.btnMenuProcess.Name = "btnMenuProcess";
             this.btnMenuProcess.Size = new System.Drawing.Size(134, 57);
             this.btnMenuProcess.TabIndex = 0;
@@ -269,6 +271,26 @@ namespace FBShare
             this.processControl1.Size = new System.Drawing.Size(668, 351);
             this.processControl1.TabIndex = 5;
             // 
+            // btnMenuReaction
+            // 
+            this.btnMenuReaction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnMenuReaction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMenuReaction.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenuReaction.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMenuReaction.FlatAppearance.BorderSize = 0;
+            this.btnMenuReaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuReaction.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuReaction.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMenuReaction.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuReaction.Image")));
+            this.btnMenuReaction.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenuReaction.Location = new System.Drawing.Point(12, 235);
+            this.btnMenuReaction.Name = "btnMenuReaction";
+            this.btnMenuReaction.Size = new System.Drawing.Size(134, 57);
+            this.btnMenuReaction.TabIndex = 0;
+            this.btnMenuReaction.Text = "       Reaction";
+            this.btnMenuReaction.UseVisualStyleBackColor = false;
+            this.btnMenuReaction.Click += new System.EventHandler(this.btnMenuReaction_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -310,5 +332,6 @@ namespace FBShare
         private FacebookAccountControl facebookAccountControl1;
         private CaptionControl captionControl1;
         private ProcessControl processControl1;
+        private System.Windows.Forms.Button btnMenuReaction;
     }
 }

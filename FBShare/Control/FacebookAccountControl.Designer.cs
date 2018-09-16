@@ -33,13 +33,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FacebookAccountControl));
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addUserControl1 = new FBShare.Control.AddUserControl();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.addUserControl1 = new FBShare.Control.AddUserControl();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnAddAccount = new System.Windows.Forms.Button();
+            this.btnAccountUpdate = new System.Windows.Forms.Button();
+            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fbName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fbGroup = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
@@ -66,8 +67,8 @@
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.No,
-            this.idDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn});
+            this.fbName,
+            this.fbGroup});
             this.bunifuCustomDataGrid1.DataSource = this.userBindingSource;
             this.bunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
@@ -81,43 +82,18 @@
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(539, 345);
             this.bunifuCustomDataGrid1.TabIndex = 1;
             // 
-            // No
-            // 
-            this.No.DataPropertyName = "no";
-            this.No.HeaderText = "#";
-            this.No.Name = "No";
-            this.No.ReadOnly = true;
-            this.No.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.No.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.No.Width = 50;
-            // 
             // addUserControl1
             // 
-            this.addUserControl1.Location = new System.Drawing.Point(0, -1);
+            this.addUserControl1.Location = new System.Drawing.Point(0, -2);
             this.addUserControl1.Name = "addUserControl1";
             this.addUserControl1.Size = new System.Drawing.Size(539, 345);
             this.addUserControl1.TabIndex = 2;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.idDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 248;
             // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.btnAccountUpdate);
             this.bunifuGradientPanel1.Controls.Add(this.btnAddAccount);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -132,7 +108,7 @@
             // 
             // btnAddAccount
             // 
-            this.btnAddAccount.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAddAccount.BackColor = System.Drawing.Color.Transparent;
             this.btnAddAccount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddAccount.FlatAppearance.BorderSize = 0;
             this.btnAddAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -147,6 +123,47 @@
             this.btnAddAccount.Text = "Add";
             this.btnAddAccount.UseVisualStyleBackColor = false;
             this.btnAddAccount.Click += new System.EventHandler(this.btnAddAccount_Click);
+            // 
+            // btnAccountUpdate
+            // 
+            this.btnAccountUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnAccountUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAccountUpdate.FlatAppearance.BorderSize = 0;
+            this.btnAccountUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccountUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccountUpdate.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnAccountUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountUpdate.Image")));
+            this.btnAccountUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAccountUpdate.Location = new System.Drawing.Point(0, 57);
+            this.btnAccountUpdate.Name = "btnAccountUpdate";
+            this.btnAccountUpdate.Size = new System.Drawing.Size(129, 42);
+            this.btnAccountUpdate.TabIndex = 0;
+            this.btnAccountUpdate.Text = "     Update";
+            this.btnAccountUpdate.UseVisualStyleBackColor = false;
+            this.btnAccountUpdate.Click += new System.EventHandler(this.btnAccountUpdate_Click);
+            // 
+            // No
+            // 
+            this.No.DataPropertyName = "no";
+            this.No.HeaderText = "#";
+            this.No.Name = "No";
+            this.No.ReadOnly = true;
+            this.No.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.No.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.No.Width = 50;
+            // 
+            // fbName
+            // 
+            this.fbName.DataPropertyName = "Name";
+            this.fbName.HeaderText = "Name";
+            this.fbName.Name = "fbName";
+            // 
+            // fbGroup
+            // 
+            this.fbGroup.DataPropertyName = "fbGroup";
+            this.fbGroup.HeaderText = "Groups";
+            this.fbGroup.Name = "fbGroup";
+            this.fbGroup.ReadOnly = true;
             // 
             // FacebookAccountControl
             // 
@@ -172,8 +189,11 @@
         private System.Windows.Forms.Button btnAddAccount;
         private AddUserControl addUserControl1;
         private System.Windows.Forms.BindingSource userBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn No;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnAccountUpdate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn No;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fbName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fbGroup;
     }
 }

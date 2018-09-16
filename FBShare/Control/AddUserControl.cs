@@ -10,6 +10,8 @@ namespace FBShare.Control
     {
         private readonly FbsEntities _db;
         private Fb _fb;
+        private string _action;
+        private string _id;
         public AddUserControl()
         {
             _db = new FbsEntities();
@@ -28,11 +30,34 @@ namespace FBShare.Control
 
         private void btnAddAccount_Click(object sender, EventArgs e)
         {
-            var token = txtAddToken.Text;
-            _fb = new Fb(token);
-            var rs = _fb.GetGroups();
+            var token = txtToken.Text;
+            switch (_action)
+            {
+                case "CREATE":
+                    _fb = new Fb(token);
+                    var rs = _fb.GetGroups();
+                    break;
+                case "UPDATE":
+                    using (var db = new FbsEntities())
+                    {
+                        var cUser = db.Users.FirstOrDefault(x => x.Id == _id);
+                        if (cUser != null)
+                        {
+                            cUser.Token = token;
+                            db.SaveChanges();
+                        }
+                    }
+                    break;
+            }
+
+
         }
 
+        public void SetAction(string action, string id = null)
+        {
+            _id = id;
+            _action = action;
+        }
         public void LoadGridAccount(DataGridView gridView)
         {
             using (var db = new FbsEntities())
@@ -44,6 +69,8 @@ namespace FBShare.Control
                 {
                     bdList.Add(new { no = ++count, Id = us.Id, Name = us.Name, fbGroup = us.Groups.Count });
                 }
+
+                gridView.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                 gridView.DataSource = bdList;
             }
 

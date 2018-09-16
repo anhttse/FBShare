@@ -95,5 +95,11 @@ namespace FBShare
         {
             _move = 0;
         }
+
+        private void btnMenuReaction_Click(object sender, EventArgs e)
+        {
+            activeSlide.Height = btnMenuReaction.Height;
+            activeSlide.Top = btnMenuReaction.Top;
+        }
     }
 }

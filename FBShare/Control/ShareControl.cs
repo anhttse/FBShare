@@ -62,10 +62,10 @@ namespace FBShare.Control
                     if (rs != null && !(bool)rs)
                     {
                         var ms = rp.GetType().GetProperty("msg")?.GetValue(rp).ToString();
-                        MessageBox.Show(ms, @"Error");
+//                        MessageBox.Show(ms, @"Error");
                         var item = _runningThread.SingleOrDefault(x => x.Id == _id);
                         _runningThread.Remove(item);
-                        break;
+                        continue;
 
                     }
                 }

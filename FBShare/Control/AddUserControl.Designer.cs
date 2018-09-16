@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddUserControl));
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtAddToken = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtToken = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnAddAccount = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAddAccountCancel = new System.Windows.Forms.Button();
@@ -47,28 +47,28 @@
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Token";
             // 
-            // txtAddToken
+            // txtToken
             // 
-            this.txtAddToken.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtAddToken.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtAddToken.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtAddToken.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAddToken.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtAddToken.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtAddToken.HintForeColor = System.Drawing.Color.Empty;
-            this.txtAddToken.HintText = "";
-            this.txtAddToken.isPassword = false;
-            this.txtAddToken.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtAddToken.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtAddToken.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtAddToken.LineThickness = 3;
-            this.txtAddToken.Location = new System.Drawing.Point(82, 144);
-            this.txtAddToken.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAddToken.MaxLength = 32767;
-            this.txtAddToken.Name = "txtAddToken";
-            this.txtAddToken.Size = new System.Drawing.Size(379, 33);
-            this.txtAddToken.TabIndex = 1;
-            this.txtAddToken.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtToken.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtToken.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtToken.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtToken.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtToken.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtToken.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtToken.HintForeColor = System.Drawing.Color.Empty;
+            this.txtToken.HintText = "";
+            this.txtToken.isPassword = false;
+            this.txtToken.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtToken.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtToken.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtToken.LineThickness = 3;
+            this.txtToken.Location = new System.Drawing.Point(82, 144);
+            this.txtToken.Margin = new System.Windows.Forms.Padding(4);
+            this.txtToken.MaxLength = 32767;
+            this.txtToken.Name = "txtToken";
+            this.txtToken.Size = new System.Drawing.Size(379, 33);
+            this.txtToken.TabIndex = 1;
+            this.txtToken.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuImageButton1
             // 
@@ -138,7 +138,7 @@
             this.Controls.Add(this.btnAddAccountCancel);
             this.Controls.Add(this.btnAddAccount);
             this.Controls.Add(this.bunifuImageButton1);
-            this.Controls.Add(this.txtAddToken);
+            this.Controls.Add(this.txtToken);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "AddUserControl";
             this.Size = new System.Drawing.Size(539, 345);
@@ -152,7 +152,7 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtAddToken;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtToken;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuFlatButton btnAddAccount;
         private System.Windows.Forms.Button btnAddAccountCancel;
