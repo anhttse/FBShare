@@ -33,7 +33,7 @@ namespace FBShare.Model.Fb
             {
                 var obj = new { link = linkToShare, message = msg};
                 var rp = await _fb.PostTaskAsync($"{gId}/feed", obj);
-                await Task.Delay(5000);
+                await Task.Delay(60000);
                 return new {result = true};
             }
             catch (Exception e)

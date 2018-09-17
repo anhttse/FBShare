@@ -54,6 +54,7 @@ namespace FBShare.Control
                 var link = txtLink.Text;
                 _fb = new Fb(token);
                 var rand = new Random();
+                var count = 0;
                 foreach (var gr in groups)
                 {
                     var msg = _captions[rand.Next(_captions.Count - 1)];
@@ -64,9 +65,16 @@ namespace FBShare.Control
                         var ms = rp.GetType().GetProperty("msg")?.GetValue(rp).ToString();
 //                        MessageBox.Show(ms, @"Error");
                         var item = _runningThread.SingleOrDefault(x => x.Id == _id);
-                        _runningThread.Remove(item);
+                        Thread.Sleep(60000);
+                        //                        _runningThread.Remove(item);
                         continue;
 
+                    }
+
+                    count++;
+                    if (count % 7 == 0)
+                    {
+                        Thread.Sleep(300000);
                     }
                 }
             }
